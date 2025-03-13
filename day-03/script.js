@@ -40,5 +40,7 @@ const objFinal ={
       obj3,
 }
 const objFinal1 = Object.assign({}, obj, obj2, obj3);
+const objFinal2 = {...obj, ...obj2, ...obj3};
 console.log(objFinal1);
-console.log(objFinal);
+console.log(objFinal2);
+
