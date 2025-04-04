@@ -23,7 +23,7 @@ console.log(userDetail['age']);
 // prints the value of the property 'Baper nam'
 //Dot notation will not work here
 // because the property name contains space
-// so w`e have to use bracket notation
+// so we have to use bracket notation
 console.log(userDetail['Baper nam']);
 // prints the value of the property symbol
 console.log(userDetail[symbol]);
