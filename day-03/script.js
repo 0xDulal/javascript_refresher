@@ -11,36 +11,34 @@ const userDetail = {
       [symbol]: 'my name is john', 
 };
 userDetail.age = 30;
-
+// prints all the properties of the object
 console.log(userDetail);
+// prints the value of the property name
+//Dot notation
 console.log(userDetail.name);
+//Bracket notation
 console.log(userDetail['age']);
+//why bracket notation?
+// because the property name contains space
+// prints the value of the property 'Baper nam'
+//Dot notation will not work here
+// because the property name contains space
+// so w`e have to use bracket notation
 console.log(userDetail['Baper nam']);
+// prints the value of the property symbol
 console.log(userDetail[symbol]);
+// changing the value of the property "name"
+userDetail.name = 'Doe';
+console.log(userDetail.name);
+// Freezing the object
+// after freezing the object, we can't change the value of the properties
+Object.freeze(userDetail);
+userDetail.name = 'Dulal';
+console.log(userDetail.name);
 
-const obj = {
-      a: 1,
-      b: 2,
-      c: 3,
-      d: 4,
-      };
-const obj2 = {
-      p: 5,
-      q: 6,
-      r: 7,
-      };
-const obj3 = {
-      x: 8,
-      y: 9,
-      z: 10,
-      };
-const objFinal ={
-      obj,
-      obj2,
-      obj3,
-}
-const objFinal1 = Object.assign({}, obj, obj2, obj3);
-const objFinal2 = {...obj, ...obj2, ...obj3};
-console.log(objFinal1);
-console.log(objFinal2);
-
+// View all the properties of the object
+console.log(Object.keys(userDetail));
+// View all the values of the object
+console.log(Object.values(userDetail));
+// View all the entries of the object
+console.log(Object.entries(userDetail));
